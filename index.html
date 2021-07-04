@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library 👋</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
+<!-- 3 ways of styling:
+1)Within HTML file(<style> </style>tag)
+2) Specific attributes or tag you can define it like this(<h1 style="color:red;">)
+-->
 <body>
-    <h1>{name}'s component library</h1>
-    <p>I am attending neog.camp and I want to make a library which would make all my projects look good and consistent.
+    <h1 >{name}'s component library</h1>
+    <p >I am attending neog.camp and I want to make a library which would make all my projects look good and consistent.
     </p>
     <hr>
 
@@ -18,6 +22,7 @@
     <h1>This is the biggest heading</h1>
     <h2>This is the second biggest.</h2>
     <p>Let me show you the normal text.This is free flowing and will wrap at the end like a paragraph.</p>
+    <p>This paragraph will have a <strong>bold</strong> text</p>
     <small>This is relatively smaller text.</small>
     <!-- motherfuckingwebsite.com -->
     <hr>
@@ -26,17 +31,17 @@
     <h2>@container</h2>
 
     <h3>Fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page</div>
+    <div class="container">This is a fluid container and it will go till the end of the page</div>
 
     <h3>Center container</h3>
-    <div>This is a centered container and it will go till the specified width.</div>
+    <div class="container container-center">This is a centered container and it will go till the specified width.</div>
 
     <hr>
 
     <h2>@Links</h2>
 
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class="link link-primary" href="/">Primary Link</a>
+    <a href="/" class="link link-secondary">Secondary Link</a>
 
     <!-- Block[h3,div,p] vs Inline[a] -->
     <!-- Rows and columns in code does not correspond to rows and columns in actual output -->
@@ -45,21 +50,21 @@
     <h2>@Lists</h2>
 
     <h3>unordered lists</h3>
-    <ul>
+    <ul class="non-bullet">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
     </ul>
 
     <h3>unordered inline lists</h3>
-    <ul>
-        <li>inline Item One</li>
-        <li>inline Item Two</li>
-        <li>inline Item Three</li>
+    <ul class="non-bullet">
+        <li class="list-item-inline">inline Item One</li>
+        <li class="list-item-inline">inline Item Two</li>
+        <li class="list-item-inline">inline Item Three</li>
     </ul>
 
     <h3>Reverse Ordered Lists</h3>
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>eggs</li>
         <li>bread</li>
@@ -68,17 +73,17 @@
     <hr />
 
     <h2>@nav</h2>
-    <nav>
-        <div>Name</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">Name</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
             </li>
-            <li>
-                <a href="/">Projects</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">Projects</a>
             </li>
-            <li>
-                <a href="/">About</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">About</a>
             </li>
         </ul>
     </nav>
