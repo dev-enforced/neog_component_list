@@ -116,14 +116,17 @@ hr{
     text-align: center;
     color:white;
     border-top-right-radius: 1rem;
-    
 }
 
+.footer .footer-header{
+    font-weight: bold;
+    font-size: large;
+}
 .footer .link{
     color:white;    
 }
 
 /* Use troubleshooting to determine whether the styles are getting applied on the desired element or not */
 .footer .ul{
-    padding-inline-start: 0rem;
+    padding-inline-start: 0px;
 }
